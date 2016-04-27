@@ -106,12 +106,12 @@ html:lang(ar) .browser h4{font-size:15px}
 .c_browsers>div:first-child+div+div+div{z-index:20}
 .c_browsers>div:first-child+div+div+div+div{z-index:10}
 .c_browsers.hideBrowsers{opacity:0}
-.c_browsers .browser.firstAnim{width:20%!important;position:absolute;opacity:1;-webkit-transition:width 1.1s cubic-bezier(.57,.01,.13,1.03);-moz-transition:width 1.1s cubic-bezier(.57,.01,.13,1.03);-o-transition:width 1.1s cubic-bezier(.57,.01,.13,1.03);transition:width 1.1s cubic-bezier(.57,.01,.13,1.03)}
+.c_browsers .browser.firstAnim{width:25%!important;position:absolute;opacity:1;-webkit-transition:width 1.1s cubic-bezier(.57,.01,.13,1.03);-moz-transition:width 1.1s cubic-bezier(.57,.01,.13,1.03);-o-transition:width 1.1s cubic-bezier(.57,.01,.13,1.03);transition:width 1.1s cubic-bezier(.57,.01,.13,1.03)}
 .c_browsers>div:first-child.firstAnim{left:0}
-.c_browsers>div:first-child+div.firstAnim{left:20%}
-.c_browsers>div:first-child+div+div.firstAnim{left:40%}
-.c_browsers>div:first-child+div+div+div.firstAnim{left:60%}
-.c_browsers>div:first-child+div+div+div+div.firstAnim{left:80%}
+.c_browsers>div:first-child+div.firstAnim{left:25%}
+.c_browsers>div:first-child+div+div.firstAnim{left:50%}
+.c_browsers>div:first-child+div+div+div.firstAnim{left:75%}
+/*.c_browsers>div:first-child+div+div+div+div.firstAnim{left:80%}*/
 .allowHover .browser:before{display:block;position:absolute;left:0;top:0;width:100%;height:100%;content:"";opacity:0;background:url(../imgs/shadow.png) no-repeat center 35%;-webkit-transition:opacity .3s linear;-moz-transition:opacity .3s linear;-o-transition:opacity .3s linear;transition:opacity .3s linear}
 .allowHover .browser:hover:before{opacity:1}
 .kwicks{display:block;list-style-type:none;list-style:none;position:relative;margin:0;padding:0}
