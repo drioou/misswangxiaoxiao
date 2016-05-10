@@ -1,0 +1,957 @@
+{
+    "settings": {
+        "introTrailer": true,
+        "defaultVideoIndex": 0,
+        "deeplinking": true
+    },
+    "soundTrack": {
+        "urls": ["assets/audio/nysm-loop-02.mp3"],
+        "sprite": {
+            "bg-audio": [0, 38521, true]
+        }
+    },
+    "backgrounds": {
+        "images": {
+            "1": {
+                "type": "image",
+                "url": "assets/images/backgrounds/nowYouSeeMeBG.jpg",
+                "nameColor": "light",
+                "h": 0.5,
+                "v": 0.5
+            }
+        },
+        "sections": [
+            {
+                "id": "home",
+                "imgIDs": [
+                    "1"
+                ]
+            },
+            {
+                "id": "synopsis",
+                "imgIDs": [
+                    "1"
+                ]
+            },
+            {
+                "id": "cast",
+                "imgIDs": [
+                    "1"
+                ]
+            },
+            {
+                "id": "gallery",
+                "imgIDs": [
+                    "1"
+                ]
+            },
+            {
+                "id": "posters",
+                "imgIDs": [
+                    "1"
+                ]
+            },
+            {
+                "id": "videos",
+                "imgIDs": [
+                    "1"
+                ]
+            }
+        ]
+    },
+    "sections": {
+        "notSupported": {
+            "files": {
+                "htmlPath": "html/notSupported.html"
+            },
+            "html": [
+                {
+                    "ID": "NOTSUPPORT_TITLE_TXT",
+                    "VAL": "<span>YOUR BROWSER</span> <span>IS NOT SUPPORTED</span>",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "NOTSUPPORT_DESC_TXT",
+                    "VAL": "<p class=\"browserupgrade\">You are using an <strong>outdated</strong> browser.<br>Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to view this experience.</p>",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                }
+            ],
+            "data": {}
+        },
+        "main": {
+            "files": {
+                "htmlPath": "html/framework.html"
+            },
+            "html": [
+                {
+                    "ID": "MOVIE_TITLE_TXT",
+                    "VAL": "Now You See Me 2"
+                },
+                {
+                    "ID": "PORTRAIT_MESSAGE_TXT",
+                    "VAL": "This site is designed to be viewed in Landscape mode. Please rotate your device to view the site."
+                },
+                {
+                    "ID": "BROWSER_MESSAGE_TXT",
+                    "VAL": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience."
+                },
+                {
+                    "ID": "FOOTER_SHARE_TXT",
+                    "VAL": "SHARE",
+                    "visible": "true",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "FOOTER_FOLLOW_TEXT",
+                    "VAL": "FOLLOW",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "FOOTER_TICKETS_TEXT",
+                    "VAL": "GET TICKETS & SHOWTIMES",
+                    "visible": "false",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "FOOTER_TICKETS_URL",
+                    "VAL": "http://google.com"
+                },
+                {
+                    "ID": "FOOTER_SHARE_FB_URL",
+                    "VAL": ""
+                },
+                {
+                    "ID": "FOOTER_SHARE_FB_TEXT",
+                    "VAL": "If you think you鈥檝e seen it all, take another look. Now You See Me 2 appears in theaters this June.",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "FOOTER_SHARE_FBLIKE_SRC",
+                    "VAL": "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2F_FACEBOOK_PAGE_NAME_&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=dark&amp;font&amp;height=21"
+                },
+                {
+                    "ID": "FOOTER_SHARE_TW_TXT",
+                    "VAL": "If you think you鈥檝e seen it all, take another look. Now You See Me 2 appears in theaters this June. #NYSM2"
+                },
+                {
+                    "ID": "FOOTER_CREDITS_TXT",
+                    "VAL": "LEGAL",
+                    "visible": "true",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "FOOTER_BILLING_BLOCK",
+                    "VAL": "assets/images/footer/billingblock.png"
+                },
+                {
+                    "ID": "FOOTER_CREDITS_IMG",
+                    "VAL": "assets/images/footer/rating.png"
+                },
+                {
+                    "ID": "FOOTER_MPAARATINGS_IMG",
+                    "VAL": "assets/images/footer/rating.png"
+                },
+                {
+                    "ID": "FOOTER_COPYRIGHT_TXT",
+                    "VAL": "Motion Picture Artwork 漏 2016 Summit Entertainment, LLC.  All Rights Reserved.",
+                    "visible": "true",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                }
+            ],
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "menu": {
+                    "links": [
+                        {
+                            "link": "home",
+                            "label": "HOME",
+                            "type": "internal",
+                            "visible": true,
+                            "font-size": false
+                        },
+                        {
+                            "link": "videos",
+                            "label": "VIDEO",
+                            "type": "internal",
+                            "visible": true,
+                            "font-size": false
+                        },
+                        {
+                            "link": "synopsis",
+                            "label": "ABOUT",
+                            "type": "internal",
+                            "visible": true,
+                            "font-size": false
+                        },
+                        {
+                            "link": "cast",
+                            "label": "CAST & CREW",
+                            "type": "internal",
+                            "visible": true,
+                            "font-size": false
+                        },
+                        {
+                            "link": "posters",
+                            "label": "POSTERS",
+                            "type": "internal",
+                            "visible": true,
+                            "font-size": false
+                        },
+                        {
+                            "link": "gallery",
+                            "label": "GALLERY",
+                            "type": "internal",
+                            "visible": true,
+                            "font-size": false
+                        },
+                        {
+                            "link": "http://lionsgateathome.com/now-you-see-me",
+                            "label": "OWN THE ORIGINAL",
+                            "type": "external",
+                            "visible": true,
+                            "font-size": false
+                        }
+                    ],
+                    "menuStyle": "vertical"
+                },
+                "MPAA_requirements": {
+                    "VISIBLE": "true"
+                },
+                "ticketing_url": "",
+                "soundcloud_url": "",
+                "footerLinks": [
+                    {
+                        "id": "mpaa_legal",
+                        "visible": true,
+                        "links": [
+                            {
+                                "LABEL": "FILM RATINGS",
+                                "URL": "http://www.filmratings.com",
+                                "VISIBLE": true,
+                                "font-size": false
+                            },
+                            {
+                                "LABEL": "PARENTAL GUIDE",
+                                "URL": "http://parentalguide.org",
+                                "VISIBLE": true,
+                                "font-size": false
+                            },
+                            {
+                                "LABEL": "MPAA",
+                                "URL": "http://www.mpaa.org/",
+                                "VISIBLE": true,
+                                "font-size": false
+                            }
+                        ]
+                    },
+                    {
+                        "id": "credits_drawer_links",
+                        "visible": true,
+                        "links": [
+                            {
+                                "LABEL": "MPAA",
+                                "URL": "http://www.mpaa.org/",
+                                "VISIBLE": true,
+                                "font-size": false
+                            },
+                            {
+                                "LABEL": "FILM RATINGS",
+                                "URL": "http://www.filmratings.com",
+                                "VISIBLE": true,
+                                "font-size": false
+                            },
+                            {
+                                "LABEL": "PARENTAL GUIDE",
+                                "URL": "http://parentalguide.org",
+                                "VISIBLE": true,
+                                "font-size": false
+                            },
+                            {
+                                "LABEL": "PRIVACY POLICY",
+                                "URL": "http://www.lionsgate.com/corporate/privacy",
+                                "VISIBLE": true,
+                                "font-size": false
+                            },
+                            {
+                                "LABEL": "TERMS OF USE",
+                                "URL": "http://www.lionsgate.com/corporate/terms",
+                                "VISIBLE": true,
+                                "font-size": false
+                            }
+                        ]
+                    }
+                ],
+                "footerFollowUs": {
+                    "VISIBLE": true,
+                    "links": [
+                        {
+                            "CLASS": "facebook",
+                            "URL": "https://www.facebook.com/NowYouSeeMeMovie",
+                            "VISIBLE": true
+                        },
+                        {
+                            "CLASS": "twitter",
+                            "URL": "https://twitter.com/NYSMmovie",
+                            "VISIBLE": true
+                        },
+                        {
+                            "CLASS": "youtube",
+                            "URL": "https://www.youtube.com/",
+                            "VISIBLE": false
+                        },
+                        {
+                            "CLASS": "googleplus",
+                            "URL": "https://plus.google.com/",
+                            "VISIBLE": true
+                        },
+                        {
+                            "CLASS": "instagram",
+                            "URL": "https://www.instagram.com/nysmmovie",
+                            "VISIBLE": true
+                        }
+                    ]
+                },
+                "footerShare": {
+                    "VISIBLE": true,
+                    "show_buttons": {
+                        "googlePlus": false,
+                        "tweet": true,
+                        "facebook_like": true,
+                        "facebook_share": true
+                    }
+                }
+            }
+        },
+        "shared": {
+            "html": [
+                {
+                    "ID": "IMAGE_FOLDER",
+                    "VAL": "img"
+                },
+                {
+                    "ID": "CLOSE_BTN",
+                    "VAL": "CLOSE",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "GET_TICKETS_LINK",
+                    "VAL": "GET TICKETS",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                }
+            ],
+            "data": {
+                "dates": [
+                    {
+                        "date": "2014-06-06",
+                        "label": "NOW PLAYING",
+                        "landing_font_size": false,
+                        "inner_font_size": false
+                    },
+                    {
+                        "date": "default",
+                        "label": "JUNE 6",
+                        "landing_font_size": false,
+                        "inner_font_size": "15px"
+                    }
+                ]
+            }
+        },
+        "home": {
+            "files": {
+                "htmlPath": "html/home.html"
+            },
+            "exclusiveTout" : {
+                "LABEL":    "Watch The Trailer",
+                "HREF":     "videos",
+                "TARGET":   "internal",
+                "VISIBLE":  "true"
+            },
+            "posterTout" : {
+                "LABEL":    "See The New Posters",
+                "HREF":     "gallery",
+                "TARGET":   "internal",
+                "VISIBLE":  "false"
+            },  
+            "webGlText" : {
+                "INSTRUCTIONS":		"IF ENABLED THE WEBGL WILL USE IMAGES INSTEAD OF THE DEFAULT 3D TEXT",
+                "IMG1_PATH":    	"assets/images/webgl/text1.png",
+                "IMG1_VISIBLE":  	"true",
+                "IMG2_PATH":    	"assets/images/webgl/text2.png",
+                "IMG2_VISIBLE":  	"true",
+                "ENABLED":  		"false"
+            },  
+            "html": [
+                {
+                    "ID": "HOME_TITLE",
+                    "VAL": "HOME",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "HOME_SUBTITLE",
+                    "VAL": "REAPPEARING 2016",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "SCROLL_TITLE",
+                    "VAL": "SCROLL TO LOOK CLOSER",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                }
+            ],
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "backplate": {
+                    "img": "assets/images/gallery/tl.png",
+                    "thumb": "assets/images/gallery/thumbnail.png",
+                    "anchor": "tl",
+                    "mode": "cover",
+                    "visible": true
+                }
+            }
+        },
+        "synopsis": {
+            "files": {
+                "htmlPath": "html/synopsis.html"
+            },
+            "html": [
+                {
+                    "ID": "SYNOPSIS_TITLE",
+                    "VAL": "SYNOPSIS",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                },
+                {
+                    "ID": "SYNOPSIS_BODY",
+                    "VAL": "THE FOUR HORSEMEN [Jesse Eisenberg, Woody Harrelson, Dave Franco, Lizzy Caplan] return for a second mind-bending adventure, elevating the limits of stage illusion to new heights and taking them around the globe. One year after outwitting the FBI and winning the public鈥檚 adulation with their Robin Hood-style magic spectacles, the illusionists resurface for a comeback performance in hopes of exposing the unethical practices of a tech magnate. The man behind their vanishing act is none other than WALTER MABRY [Daniel Radcliffe], a tech prodigy who threatens the Horsemen into pulling off their most impossible heist yet. Their only hope is to perform one last unprecedented stunt to clear their names and reveal the mastermind behind it all.<p>Summit Entertainment presents a K/O Paper Products production a Jon M. Chu film.</p>",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                }
+            ],
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "hideMenu": false,
+                "stuff": "nothing"
+            }
+        },
+        "cast": {
+            "files": {
+                "htmlPath": "html/cast.html"
+            },
+            "html": [
+                {
+                    "ID": "CAST_TITLE",
+                    "VAL": "CAST & CREW",
+                    "css": [
+                        {
+                            "ID": "font-size",
+                            "VAL": false
+                        }
+                    ]
+                }
+            ],
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "hideMenu": false,
+                "castCrew": [
+                    {
+                        "actor": "JESSE EISENBERG",
+                        "role": "is J. Daniel Atlas",
+                        "image": "assets/images/cast/cast-JE.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "MARK RUFFALO",
+                        "role": "is Dylan Rhodes",
+                        "image": "assets/images/cast/cast-MR.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "WOODY HARRELSON",
+                        "role": "is Merritt McKinney",
+                        "image": "assets/images/cast/cast-WH.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "LIZZY CAPLAN",
+                        "role": "is Lula",
+                        "image": "assets/images/cast/cast-LC.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "DAVE FRANCO",
+                        "role": "is Jack Wilder",
+                        "image": "assets/images/cast/cast-DF.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "MORGAN FREEMAN",
+                        "role": "is Thaddeus Bradley",
+                        "image": "assets/images/cast/cast-MF.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "DANIEL RADCLIFFE",
+                        "role": "is Walter",
+                        "image": "assets/images/cast/cast-DR.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "JAY CHOU",
+                        "role": "is Li",
+                        "image": "assets/images/cast/cast-JC.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "MICHAEL CAINE",
+                        "role": "is Arthur Tressler",
+                        "image": "assets/images/cast/cast-MC.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "SANAA LATHAN",
+                        "role": "is Natalie Austin",
+                        "image": "assets/images/cast/cast-SL.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "TSAI CHIN",
+                        "role": "",
+                        "image": "assets/images/cast/cast-TC.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "DAVID WARSHOFSKY",
+                        "role": "is Cowan",
+                        "image": "assets/images/cast/cast-DW.jpg",
+                        "bgColor": "#000000"
+                    },
+                    {
+                        "actor": "",
+                        "role": "",
+                        "image": "assets/images/cast/crew.png",
+                        "bgColor": "#FFFFFF"
+                    }
+                ]
+            }
+        },
+        "posters": {
+            "files": {
+                "htmlPath": "html/posters.html"
+            },
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "hideMenu": false,
+                "images": [
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/poster-00-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "cards_poster",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/nysm-JE-treated-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "poster_je",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/nysm-WH-treated-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "poster_wh",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/nysm-LC-treated-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "poster_lc",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/nysm-DF-treated-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "poster_df",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/JE-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "posterEisenberg",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/MR-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "posterRuffalo",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/WH-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "posterHarrelson",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/LC-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "posterCaplan",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/DF-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "posterID": "posterFranco",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/MF-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/DR-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/JC-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/MC-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    }
+                ]
+            }
+        },
+        "gallery": {
+            "files": {
+                "htmlPath": "html/gallery.html"
+            },
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "hideMenu": false,
+                "images": [
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/wallpaper-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-01-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-02-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-03-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-04-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-05-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-06-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-07-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-08-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-09-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-10-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-11-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    },
+                    {
+                        "type": "image",
+                        "url": "assets/images/gallery/gallery-12-small.jpg",
+                        "nameColor": "light",
+                        "mode": "contain",
+                        "h": 0.5,
+                        "v": 0.5
+                    }
+                ]
+            }
+        },
+        "videos": {
+            "files": {
+                "htmlPath": "html/videos.html"
+            },
+            "css": [
+                {
+                    "ID": "../assets/images/",
+                    "VAL": "assets/images/"
+                }
+            ],
+            "data": {
+                "hideMenu": false,
+                "defaultVid": "OFFICIAL TRAILER",
+                "videos": [
+                    {
+                        "title": "OFFICIAL TRAILER",
+                        "css": [
+                            {
+                                "ID": "fontSize",
+                                "VAL": false
+                            }
+                        ],
+                        "mobilePreviewImage": "assets/images/videos/nym-trailer-1.jpg",
+                        "type": "youTube",
+                        "videoSrc": "JzZh8kJJwe4",
+                        "showOptions": false,
+                        "visible": true,
+                        "qt_sm": "",
+                        "qt_md": "",
+                        "qt_lg": "",
+                        "qt_480": "",
+                        "qt_720": "",
+                        "qt_1080": "",
+                        "wm_sm": "",
+                        "wm_md": "",
+                        "wm_lg": "",
+                        "wm_480": "",
+                        "wm_720": "",
+                        "wm_1080": ""
+                    },
+                    {
+                        "title": "TEASER TRAILER",
+                        "css": [
+                            {
+                                "ID": "fontSize",
+                                "VAL": false
+                            }
+                        ],
+                        "mobilePreviewImage": "assets/images/videos/nym-trailer-2.jpg",
+                        "type": "youTube",
+                        "videoSrc": "b306jk-C5rE",
+                        "showOptions": false,
+                        "visible": true,
+                        "qt_sm": "",
+                        "qt_md": "",
+                        "qt_lg": "",
+                        "qt_480": "",
+                        "qt_720": "",
+                        "qt_1080": "",
+                        "wm_sm": "",
+                        "wm_md": "",
+                        "wm_lg": "",
+                        "wm_480": "",
+                        "wm_720": "",
+                        "wm_1080": ""
+                    }
+                ]
+            }
+        }
+    }
+}

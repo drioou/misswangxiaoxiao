@@ -1,0 +1,29 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac:
+.DS_Store
+
+# System:
+*.scss
+*.map
+node_modules
+sitemaps.xml
+baidunews.xml
+/index.html
+/file/cache/*.php
+/file/cache/*.lock
+/file/cache/ban/*.php
+/file/cache/htm/*.php
+/file/cache/php/*.php
+/file/cache/tag/*.php
+/file/cache/tag/*.htm
+/file/cache/tpl/*
+/file/script/config.js
+/file/static/*
+/file/session/*
+/file/md5/*.php
+/config.inc.php
+/sql_back/*.sql
