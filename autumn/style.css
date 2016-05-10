@@ -112,6 +112,7 @@ Arrows Styles
 body{color:#fff;font-family:'Raleway',sans-serif;font-weight:400;}
 img{max-width:100%;height:auto;}
 .container{max-width:1140px;width:100%;margin:0 auto;padding:0 15px;position:relative;}
+.container a,a:hover{color:#fff;text-decoration: none;}
 h1{font-size:80px;letter-spacing:5px;margin-bottom:26px;font-weight:500;}
 @media screen and (max-width:1400px){
 	h1{font-size:70px;}
@@ -563,11 +564,13 @@ span.wpcf7-form-control-wrap[class*="captcha"],.captcha-row p{float:right;}
 	.accordion-title{padding-left:20px;padding-top:20px;padding-bottom:20px;}
 }
 .accordion-title:after{content:'';width:80px;height:100%;position:absolute;right:0;top:0;background:rgba(255,255,255,0.1);}
-.accordion-title:before{content:'';width:80px;height:100%;position:absolute;right:0;top:0;background:url("img/icon5.png") no-repeat center;display:block;opacity:0.5;-webkit-transition:all 0.2s linear;transition:all 0.2s linear;}
+.accordion-title:before{content:'';width:80px;height:100%;position:absolute;right:0;top:0;background:url("img/play.svg") no-repeat center;display:block;opacity:0.5;-webkit-background-size: 50%;
+background-size: 70%;}
 .accordion-title span{font-weight:600;}
 .accordion-title.isHover,.accordion-title.active{border-color:rgba(255,255,255,0.3)!important;}
 .accordion-title:hover:before{opacity:1;}
-.accordion-title.active:before{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);transform:rotate(-180deg);opacity:1;}
+.accordion-title.active:before{content:'';width:80px;height:100%;position:absolute;right:0;top:0;background:url("img/stop.svg") no-repeat center;display:block;-webkit-background-size: 50%;
+background-size: 70%;opacity:1;}
 .accordion-content{margin-top:1px;margin-bottom:1px;display:none;}
 .accordion-content img{width:100%;display:block;}
 .slider-section{padding-top:160px;padding-bottom:60px;height:auto;min-height:100vh;background:url("img/music-bg.jpg") no-repeat center;background-size:cover;overflow:hidden;}

@@ -252,7 +252,7 @@ $(function () {
         }
 
         if (self.hasClass('active')) {
-            $('.music-record-wrapper').prepend('<div class="music-record clearfix"><div class="round" style="border-color: ' + color + ' "></div><img src="/wp-content/themes/sound/img/music-record.png" alt=""></div>');
+            $('.music-record-wrapper').prepend('<div class="music-record clearfix"><div class="round" style="border-color: ' + color + ' "></div><img src="img/music-record.png" alt=""></div>');
             $('.music-record').css({'borderColor': color}).animate({'left': widthBox}, 300).addClass('music-record-active');
             $(".music-record:not(:eq(0))").addClass('animationOut');
 
