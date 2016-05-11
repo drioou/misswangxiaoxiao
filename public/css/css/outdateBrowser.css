@@ -1916,3 +1916,64 @@ a {
   background-color: #f25648; }
   .operaBg #content, .operaBg .main_menu ul li a.active {
     background-color: #f25648; }
+
+.click_circle {
+  -webkit-tap-highlight-color: transparent;
+  display: none;
+  position: absolute;
+  width: 158px;
+  height: 158px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-left: -79px;
+  top: 50%;
+  margin-top: -79px;
+  cursor: pointer; }
+  .click_circle .click_circle_bg {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  .click_circle circle {
+    pointer-events: none;
+    opacity: .5; }
+  .click_circle .topcircle {
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -34px;
+    margin-top: -34px;
+    background: #fff;
+    width: 69px;
+    height: 69px;
+    z-index: 4;
+    border-radius: 50%; }
+    .click_circle .topcircle .cross_container {
+      -webkit-tap-highlight-color: transparent;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -9px;
+      margin-top: -9px;
+      width: 18px;
+      height: 18px;
+      z-index: 4;
+      pointer-events: none; }
+      .click_circle .topcircle .cross_container .line_horizontal {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -1px;
+        width: 18px;
+        height: 2px;
+        background: #81c5d8;
+        border-radius: 1px; }
+      .click_circle .topcircle .cross_container .line_vertical {
+        position: absolute;
+        left: 50%;
+        margin-left: -1px;
+        width: 2px;
+        height: 100%;
+        background: #81c5d8;
+        bottom: 0;
+        border-radius: 1px; }

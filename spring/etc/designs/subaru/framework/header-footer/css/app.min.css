@@ -1,0 +1,383 @@
+@font-face{font-family:'helvetica_neue_heavy';src:url('../../../global/css/app/css/fonts/helveticaneueltstd-hv-webfont.eot');src:url('../../../global/css/app/css/fonts/helveticaneueltstd-hv-webfont.eot?#iefix') format('embedded-opentype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-hv-webfont.woff') format('woff'),url('../../../global/css/app/css/fonts/helveticaneueltstd-hv-webfont.ttf') format('truetype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-hv-webfont.svg#helvetica_neue_bold') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'helvetica_neue_medium';src:url('../../../global/css/app/css/fonts/helveticaneueltstd-md-webfont.eot');src:url('../../../global/css/app/css/fonts/helveticaneueltstd-md-webfont.eot?#iefix') format('embedded-opentype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-md-webfont.woff') format('woff'),url('../../../global/css/app/css/fonts/helveticaneueltstd-md-webfont.ttf') format('truetype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-md-webfont.svg#helvetica_neue_medium') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'helvetica_neue_roman';src:url('../../../global/css/app/css/fonts/helveticaneueltstd-roman-webfont.eot');src:url('../../../global/css/app/css/fonts/helveticaneueltstd-roman-webfont.eot?#iefix') format('embedded-opentype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-roman-webfont.woff') format('woff'),url('../../../global/css/app/css/fonts/helveticaneueltstd-roman-webfont.ttf') format('truetype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-roman-webfont.svg#helvetica_neue_roman') format('svg');font-weight:normal;font-style:normal}
+@font-face{font-family:'helvetica_neue_condensed';src:url('../../../global/css/app/css/fonts/helveticaneueltstd-condensed-webfont.eot');src:url('../../../global/css/app/css/fonts/helveticaneueltstd-condensed-webfont.eot?#iefix') format('embedded-opentype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-condensed-webfont.woff') format('woff'),url('../../../global/css/app/css/fonts/helveticaneueltstd-condensed-webfont.ttf') format('truetype'),url('../../../global/css/app/css/fonts/helveticaneueltstd-condensed-webfont.svg#helvetica_neue_condensed') format('svg');font-weight:normal;font-style:normal}
+.helvetica-neue-roman{font-family:"helvetica_neue_roman",Helvetica,Arial,serif!important}
+.helvetica-neue-medium{font-family:"helvetica_neue_medium",Helvetica,Arial,serif!important}
+.helvetica-neue-heavy{font-family:"helvetica_neue_heavy",Helvetica,Arial,serif!important}
+.helvetica-neue-condensed{font-family:"helvetica_neue_condensed",Helvetica,Arial,serif!important}
+.arial{font-family:"Arial",Helvetica,serif!important}
+body{margin:0;padding:0}
+#global_content{position:relative;z-index:2;zoom:1}
+.hidden-text{text-indent:-999999px!important}
+.helvetica-neue{font-family:Helvetica,Arial,sans-serif!important}
+.arial{font-family:Helvetica,Arial,sans-serif!important}
+.bold{font-weight:bold!important}
+.normal{font-weight:normal!important}
+a{text-decoration:none}
+.show-more{margin:40px 0}
+.show-more:hover{cursor:pointer}
+.color-grey{color:#56564c}
+.color-black{color:#232323}
+.invisible{visibility:hidden}
+form{margin:0;padding:0}
+body{font-family:Helvetica,Arial,sans-serif;min-width:320px}
+.ui-page,#global_footer,#global_content,#global_header{min-width:320px}
+#main-content-wrapper{background-color:#FFF;width:100%;min-width:320px;max-width:960px;margin:0 auto;font-family:Helvetica,Arial,sans-serif}
+a{color:#20609f}
+a:hover{color:#232323}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+@media only screen and (max-width:47.9375em){.small-only-text-left{text-align:left!important}
+.small-only-text-right{text-align:right!important}
+.small-only-text-center{text-align:center!important}
+.small-only-text-justify{text-align:justify!important}
+}
+@media only screen{.small-text-left{text-align:left!important}
+.small-text-right{text-align:right!important}
+.small-text-center{text-align:center!important}
+.small-text-justify{text-align:justify!important}
+}
+@media only screen and (min-width:40em) and (max-width:48em){.medium-only-text-left{text-align:left!important}
+.medium-only-text-right{text-align:right!important}
+.medium-only-text-center{text-align:center!important}
+.medium-only-text-justify{text-align:justify!important}
+}
+@media only screen and (min-width:40em){.medium-text-left{text-align:left!important}
+.medium-text-right{text-align:right!important}
+.medium-text-center{text-align:center!important}
+.medium-text-justify{text-align:justify!important}
+.ui-loader{display:none}
+}
+@media only screen and (min-width:48em){.large-text-left{text-align:left!important}
+.large-text-right{text-align:right!important}
+.large-text-center{text-align:center!important}
+.large-text-justify{text-align:justify!important}
+}
+@media only screen and (max-width:47.9375em){.ui-mobile .ui-page{padding-top:0!important}
+.small-only{display:block;max-width:767px}
+.medium-up{display:none!important}
+}
+@media only screen and (min-width:48em){#global_header,#global_content,#global_footer{min-width:768px}
+.small-only{display:none!important}
+.medium-up{display:block!important}
+}
+#simplemodal-overlay-footer{background-color:#000}
+#simplemodal-container-footer{background-color:#fff;border:0;color:#444;height:auto!important;width:840px!important;padding:20px;font-size:12px;font-family:Helvetica,Arial,sans-serif;color:#55554b}
+#simplemodal-container-footer a{color:#ddd}
+#simplemodal-container-footer a.modalCloseImg{background:url(../../../../../../content/dam/subaru/global/footer/simplemodal-close.png) no-repeat;display:inline;width:50px;height:50px;z-index:3200;position:absolute;top:-22px;right:-25px;cursor:pointer}
+@media only screen and (max-width:64em){div#simplemodal-container-footer.simplemodal-container{width:80%!important;left:0!important;right:0;margin:auto}
+}
+.ie8 .footer-responsive #global_footer #_bapw-icon{max-width:50px}
+body{width:100%;min-width:980px;margin:0;padding:0}
+body *:focus{outline-style:none;box-shadow:none;border-color:transparent}
+#global_header{background-color:#fafafa;margin:0;padding:0;width:100%;min-width:960px;text-align:left;z-index:130;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;border-bottom:0 none;height:100px}
+#global_header h1{display:table-cell;vertical-align:middle}
+#global_header a{font-size:13px}
+#global_header ul,#global_header li{list-style-type:none;margin:0;padding:0}
+#global_header .nav-list .list-item{text-align:center;float:left}
+#global_header .nav-list .list-item a{color:#FFF;padding:0 20px;display:table;margin:3px 0}
+#global_header .nav-list .list-item a:hover{color:#20609f}
+#global_header #top-nav{background-color:#20609f;width:100%;min-width:960px;height:30px}
+#global_header #top-nav .row{width:960px;min-width:960px;max-width:960px}
+#global_header #top-nav .row .nav-list{display:inline-block;height:30px;margin:0}
+#global_header #top-nav .row .nav-list .list-item{text-align:center;display:inline-block;height:30px}
+#global_header #top-nav .row .nav-list .list-item a{height:30px;position:relative;padding:0 15px 0 40px;line-height:30px}
+#top-nav .your_location span{height:30px;position:relative;padding:0 15px 0 40px;line-height:30px;color:#FFF;display:table;margin:3px 0;font-size:13px;cursor:pointer}
+#global_header #top-nav .row .nav-list .list-item a:before,#top-nav .your_location span:before{content:'';padding:0;position:absolute;height:16px;width:18px;background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") 0 0 no-repeat;background-position:-56px -49px;top:7px;left:18px;margin:0}
+#global_header #top-nav .row .nav-list .list-item:hover,#global_header #top-nav .row .nav-list .list-item.active,#global_header #top-nav .row .nav-list .your_location:hover.active{background-color:#FFF}
+#global_header #top-nav .row .nav-list .your_location.active{background-color:transparent}
+#global_header #top-nav .row .nav-list .list-item:hover a,#global_header #top-nav .row .nav-list .list-item.active a,#top-nav .your_location:hover span{color:#20609f}
+#global_header #top-nav .row .nav-list .list-item.owners a{padding:0 15px 0 42px}
+#global_header #top-nav .row .nav-list .list-item.owners a:before{background-position:-17px -49px}
+#top-nav .your_location span:before{background-position:-6px -159px}
+#top-nav .your_location:hover span:before{background-position:-6px -182px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.owners a:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite-x2.png") 0 0 no-repeat;background-position:-205px -3px;background-size:651px}
+}
+#global_header #top-nav .row .nav-list .list-item.owners a:hover:before{background-position:-17px -74px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.owners a:hover:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite-x2.png") 0 0 no-repeat;background-position:-205px -25px;background-size:651px}
+}
+#global_header #top-nav .row .nav-list .list-item.customer-support a{padding:0 24px 0 40px}
+#global_header #top-nav .row .nav-list .list-item.customer-support a:before{background-position:-34px -49px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.customer-support a:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite-x2.png") 0 0 no-repeat;background-position:-232px -3px;background-size:651px}
+}
+#global_header #top-nav .row .nav-list .list-item.customer-support a:hover:before{background-position:-34px -74px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.customer-support a:hover:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite-x2.png") 0 0 no-repeat;background-position:-232px -25px;background-size:651px}
+}
+#global_header #top-nav .row .nav-list .list-item.search a{padding:0 20px 0 40px}
+#global_header #top-nav .row .nav-list .list-item.search a.close:before,#global_header #top-nav .row .nav-list .list-item.search a.close:hover:before{background-position:-61px -75px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.search a.close:hover:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") 0 0 no-repeat;background-position:-61px -75px}
+}
+#global_header #top-nav .row .nav-list .list-item.search a:before{background-position:-61px -49px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.search a:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite-x2.png") 0 0 no-repeat;background-position:-134px -70px;background-size:651px}
+}
+#global_header #top-nav .row .nav-list .list-item.search a:hover:before{background-position:-101px -99px}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#global_header #top-nav .row .nav-list .list-item.search a:hover:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite-x2.png") 0 0 no-repeat;background-position:-134px -91px;background-size:651px}
+}
+#global_header #main-nav{width:100%;min-width:960px;max-width:100%;height:70px;background-color:#fafafa;border-bottom:1px solid #ccc}
+#global_header #main-nav .main-nav-buttons{height:100%;position:relative;margin:0 auto;width:960px}
+#global_header #main-nav .main-nav-buttons .list-item{display:block;float:left;height:69px;text-align:center;padding:0;margin:0}
+#global_header #main-nav .main-nav-buttons .list-item:before{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-0.25em}
+#global_header #main-nav .main-nav-buttons .subaru-logo{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") 0 0 no-repeat;width:153px;height:44px;display:inline-block;padding:0;margin:0;vertical-align:middle}
+#global_header #main-nav .main-nav-buttons .subaru-logo a{display:block;width:100%;height:100%;padding:0;margin:0}
+#global_header #main-nav .main-nav-buttons .subaru-logo a.ir{text-indent:-9999px}
+#global_header #main-nav .main-nav-buttons a{color:#232323;font-weight:bold;font-size:14px;display:inline-block;vertical-align:middle;line-height:20px}
+#global_header #main-nav .main-nav-buttons a:hover{color:#20609f}
+#global_header #main-nav .main-nav-buttons .list-item{text-align:center}
+#global_header #main-nav .main-nav-buttons .list-item.active a{color:#20609f}
+#global_header #main-nav .main-nav-buttons .list-item a{padding:0;margin:0}
+#global_header #main-nav .main-nav-buttons .list-item a.arrow-down-blue{position:relative}
+#global_header #main-nav .main-nav-buttons .list-item a.arrow-down-blue:after{content:" ";padding:0;position:relative;top:0;margin:0 0 0 9px;height:6px;width:10px;display:inline-block;background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") 0 -50px no-repeat}
+#global_header #main-nav .main-nav-buttons .list-item.home{width:212px;text-align:left;padding:0;margin:0}
+#global_header #main-nav .main-nav-buttons .list-item.home a{margin:0}
+#global_header #main-nav .main-nav-buttons .list-item.vehicles{width:112px}
+#global_header #main-nav .main-nav-buttons .list-item.tools{width:169px}
+#global_header #main-nav .main-nav-buttons .list-item.why{width:133px}
+#global_header #main-nav .main-nav-buttons .list-item.build{position:relative;width:175px}
+#global_header #main-nav .main-nav-buttons .list-item.build a{margin:0;display:inline-block}
+#global_header #main-nav .main-nav-buttons .list-item.build a .ico{padding:5px 0 5px 34px}
+#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer{position:relative;width:150px}
+#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer a{margin:1px 0 0;display:inline-block}
+#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer a.ico{padding:5px 0 5px 43px}
+#global_header #main-nav .main-nav-buttons .list-item.build a,#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer a{padding:0 0 0 34px}
+#global_header #main-nav .main-nav-buttons .list-item.build a:before,#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer a:before{content:" ";padding:0;position:absolute;height:30px;width:30px;display:inline-block}
+#global_header #main-nav .main-nav-buttons .list-item.build a:before{margin:-5px 0 0;background:url("../../../../../../content/dam/subaru/global/header/byo.gif") no-repeat 0;left:19px}
+#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer a:before{margin:-6px 0 0 5px;background:url("../../../../../../content/dam/subaru/global/header/fad.gif") no-repeat 0;left:8px}
+#global_header #main-nav .main-nav-buttons .list-item.build a:hover:before,#global_header #main-nav .main-nav-buttons .list-item.find-a-dealer a:hover:before{background-position:-30px 0}
+#top-nav-reveal,#main-nav-reveal,#main-nav-reveal-fad{left:50%}
+#top-nav-reveal.search{width:100%;max-width:960px;min-width:960px;margin-left:-480px;z-index:1000;top:30px;border:0 none;box-shadow:none;padding:0}
+@media only screen and (-webkit-min-device-pixel-ratio:2){#top-nav-reveal.search{margin-left:-470px}
+}
+#top-nav-reveal.search form,#top-nav-reveal.search input{margin:0;padding:0;border:0 none;box-shadow:none;-webkit-box-shadow:0 none;background:#FFF 0 0}
+#top-nav-reveal.search #search_nav{display:inline-block;width:920px;margin:16px 20px}
+#top-nav-reveal.search #search_box{display:inline-block;vertical-align:middle;float:left;width:100%;font-size:21px;max-width:840px}
+#top-nav-reveal.search .search_button{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") no-repeat;background-position:-79px -47px;display:inline-block;width:32px;height:37px;padding:0;margin:0 20px 0 0;float:right;border:0 none}
+#main-nav-reveal{width:960px;margin-left:-480px;z-index:130;border:0 none;padding:0;-webkit-box-shadow:0 0 0 rgba(0,0,0,0);box-shadow:0 0 0 rgba(0,0,0,0);top:100px!important}
+#main-nav-reveal:before,#main-nav-reveal-fad:before{content:" ";padding:0;position:absolute;height:15px;width:30px;display:inline-block;background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") 0 -100px no-repeat}
+#main-nav-reveal.vsp:before{margin:-15px 0 0 250px}
+#main-nav-reveal.tools:before{margin:-15px 0 0 395px}
+#main-nav-reveal.why:before{margin:-15px 0 0 545px}
+#main-nav-reveal-vsp,#main-nav-reveal-tools,#main-nav-reveal-why,#main-nav-reveal-fad{display:none}
+#main-nav-reveal-vsp.active,#main-nav-reveal-tools.active,#main-nav-reveal-why.active,#main-nav-reveal-fad.active{display:block;margin:0}
+#main-nav-reveal-vsp a,#main-nav-reveal-tools a,#main-nav-reveal-why a,#main-nav-reveal-fad a{color:#232323;display:block}
+#main-nav-reveal-vsp a:hover,#main-nav-reveal-vsp a:hover h2,#main-nav-reveal-tools a:hover,#main-nav-reveal-tools a:hover h2,#main-nav-reveal-why a:hover,#main-nav-reveal-why a:hover h2,#main-nav-reveal-fad a:hover,#main-nav-reveal-fad a:hover h2{color:#20609f;text-decoration:none}
+#main-nav-reveal-vsp ul,#main-nav-reveal-vsp li,#main-nav-reveal-tools ul,#main-nav-reveal-tools li,#main-nav-reveal-why ul,#main-nav-reveal-why li,#main-nav-reveal-fad ul,#main-nav-reveal-fad li{list-style-type:none;margin:0;padding:0}
+#main-nav-reveal-vsp .grey-background,#main-nav-reveal-tools .grey-background,#main-nav-reveal-why .grey-background,#main-nav-reveal-fad .grey-background{background-color:#efefef;padding:40px 0 0 30px}
+.ie8 #main-nav-reveal-why .grey-background{padding:0 0 0 5px}
+#main-nav-reveal-vsp .grey-background a,#main-nav-reveal-tools .grey-background a,#main-nav-reveal-why .grey-background a,#main-nav-reveal-fad .grey-background a{color:#20609f}
+#main-nav-reveal-vsp .grey-background a:hover,#main-nav-reveal-tools .grey-background a:hover,#main-nav-reveal-why .grey-background a:hover,#main-nav-reveal-fad .grey-background a:hover{color:#232323}
+#main-nav-reveal-vsp .grey-background .nav-list,#main-nav-reveal-tools .grey-background .nav-list,#main-nav-reveal-why .grey-background .nav-list,#main-nav-reveal-fad .grey-background .nav-list{margin:0}
+#main-nav-reveal-vsp .grey-background .nav-list .list-item,#main-nav-reveal-tools .grey-background .nav-list .list-item,#main-nav-reveal-why .grey-background .nav-list .list-item,#main-nav-reveal-fad .grey-background .nav-list .list-item{margin:0 0 20px}
+#main-nav-reveal.vsp{border-top:0 none;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-left:1px solid #ccc;height:auto}
+#main-nav-reveal.vsp .vehicle-item.active .button{background-color:#fff;cursor:pointer}
+#main-nav-reveal.vsp .vehicle-item .button{width:239px;display:block;font-size:13px;border-top:1px solid #ccc;border-right:1px solid #ccc;position:static;height:60px;background-color:#efefef;left:0;text-align:left;color:#232323;margin:0;padding:0;-webkit-transition:background-color 600ms ease-out;-moz-transition:background-color 600ms ease-out;transition:background-color 600ms ease-out}
+#main-nav-reveal.vsp .bottom-items{display:flex;flex-flow:row nowrap;width:100%}
+#main-nav-reveal.vsp .bottom-items.just-two .vehicle-item{flex:0 0 50%}
+#main-nav-reveal.vsp .bottom-items .vehicle-item{flex:0 0 33.4%}
+#main-nav-reveal.vsp .bottom-items .vehicle-item .button{width:100%;text-align:center;padding:10px;border-top:1px solid #ccc}
+#main-nav-reveal.vsp .vehicle-item .button:hover{background-color:#fff;cursor:pointer}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price{display:block;padding:6px 6px 0 18px;width:100%;height:51px;z-index:1001}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .model-name{display:block;clear:both;margin:0;line-height:20px}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .msrp{display:inline-block}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .starting-price{font-size:10px;color:#999}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .global-nav-img{max-width:80px;margin:3px 0 0 0;outline:0 none;display:inline-block}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .model-image-size,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .BRZ,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .IMP,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .WRX,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .LEG,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .FOR,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .XV,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .OBK,#main-nav-reveal.vsp .vehicle-item .button .model-name-price .XV-HYBRID{width:77px;height:40px}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .BRZ{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px 0 no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .IMP{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px -52px no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .WRX{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -297px -104px no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .LEG{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px -156px no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .FOR{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px -204px no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .XV{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px -257px no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .XV-HYBRID{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px -311px no-repeat}
+#main-nav-reveal.vsp .vehicle-item .button .model-name-price .OBK{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") -200px -364px no-repeat}
+#main-nav-reveal.vsp .vehicle-item.all-vehicles .button .model-name-price,#main-nav-reveal.vsp .vehicle-item.cpo .button .model-name-price{padding:12px 10px 0 18px;height:40px}
+#main-nav-reveal.vsp .vehicle-item.active .button,#main-nav-reveal.vsp .vehicle-item.active .button:hover{background-color:#FFF}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker{width:720px;height:489px;padding:45px 40px 0;margin:0;position:absolute;right:0;top:0;color:#FFF;display:none}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info{text-shadow:1px 1px #232323}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #BRZ .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #IMP .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #WRX .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #LEG .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #FOR .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #XV .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #XV-HYBRID .model-info h3{color:#FFF;font-size:25px;margin:10px -5px 27px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item #OBK .model-info h3{color:#FFF;font-size:36px;margin:0 -5px 26px 0;padding:0}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .vehicle-info{font-size:10px;padding:2px 0 0 34px;margin:0}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .vehicle-info p{margin:0;padding:0;font-size:10px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .vehicle-info span,#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .vehicle-info p{color:#fff}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .mpg.vehicle-info{padding:2px 0 0 8px;margin:0 -19px 0 0;letter-spacing:-0.02em}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .mpg-msrp{font-size:21px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .mpg-msrp .mpg-city{font-size:15px;line-height:26px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links{margin:-7px 0 0;padding:0;display:block;width:100%;clear:both}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li{width:160px;list-style-type:none;display:block;float:left;height:40px;margin:0}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button{background-color:#232323;color:#FFF;font-size:13px;display:block;height:40px;margin:0;width:158px;border:0 none;text-shadow:0 0 transparent}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button:hover{background-color:#FFF;color:#232323;border:0 none}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button:before{content:" ";position:absolute;height:25px;width:25px;display:inline-block;background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") no-repeat}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.overview{padding:12px 0 0 37px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.overview:before{margin:0 0 10px -30px;background-position:-120px -47px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.overview:hover:before{background-position:-160px -47px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.photos-videos{padding:13px 0 10px 34px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.photos-videos:before{margin:1px 0 10px -24px;background-position:-120px -75px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.photos-videos:hover:before{background-position:-160px -75px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.vme_cta_icon_competitive{padding:12px 0 10px 39px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.vme_cta_icon_competitive:before{margin:2px 0 10px -29px;background-position:-120px -100px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.vme_cta_icon_competitive:hover:before{background-position:-160px -100px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.build-your-own{padding:13px 0 10px 33px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.build-your-own:before{margin:0 0 10px -23px;background-position:-120px -124px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .links li .button.build-your-own:hover:before{background-position:-160px -124px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .cta{padding:10px 32px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer{display:block;position:absolute;bottom:30px;width:645px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer p{margin:0;padding:0;font-size:12px;color:#FFF}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer p a{font-size:12px;height:auto;display:block;color:#FFF}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer p.right{margin:50px -2px 0 0;font-size:10px}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer p.bold{color:#FFF}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer .vehicle-fma{margin:0;display:table-cell;vertical-align:bottom;background-color:#232323}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer .vehicle-fma img{height:auto;width:auto;padding:4px 0 0 9px}
+#main-nav-reveal.vsp .vehicle-item #BRZ .vehicle.sticker .model-info .footer .vehicle-fma img{height:50px;width:80px;padding-left:0}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer .vehicle-fma p{display:inline-block}
+#main-nav-reveal.vsp .vehicle-item .vehicle.sticker .model-info .footer .vehicle-fma p a{background-color:#232323;padding:10px 45px 8px 10px;font-size:12px;height:auto;display:block;color:#FFF;line-height:16px}
+#main-nav-reveal.vsp .vehicle-item #XV.vehicle.sticker .model-info .footer .vehicle-fma img{padding:0}
+#main-nav-reveal.vsp .vehicle-item #XV.vehicle.sticker .model-info .footer .vehicle-fma p{padding-right:15px}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker,#main-nav-reveal.vsp .vehicle-item.all-vehicles .vehicle.sticker{padding:45px 50px 0}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker h3,#main-nav-reveal.vsp .vehicle-item.all-vehicles .vehicle.sticker h3{margin:0 0 22px -2px}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker .cta,#main-nav-reveal.vsp .vehicle-item.all-vehicles .vehicle.sticker .cta{color:#FFF}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker .cta:hover,#main-nav-reveal.vsp .vehicle-item.all-vehicles .vehicle.sticker .cta:hover{background-color:#232323}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker{color:#FFF}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker h3{color:#FFF;margin:0 0 14px -1px;padding:0}
+#main-nav-reveal.vsp .vehicle-item.cpo .vehicle.sticker p{color:#FFF;margin:0 0 26px;padding:0;font-size:21px;width:380px;font-family:Helvetica,Arial,sans-serif}
+#main-nav-reveal.vsp .vehicle-item.active .vehicle-link,#main-nav-reveal.vsp .vehicle-item .vehicles .vehicle-link:hover{border-right:1px solid #FFF;background-color:#FFF}
+#main-nav-reveal.vsp .vehicle-item.active>.vehicle-link+.vehicle.sticker{display:inline-block}
+#main-nav-reveal-tools,#main-nav-reveal-why{padding:0;font-family:Helvetica,Arial,sans-serif}
+#main-nav-reveal-tools .grey-background .view-a-brochure a:before,#main-nav-reveal-why .grey-background .view-a-brochure a:before{background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") no-repeat -159px 4px;display:inline-block;height:16px;width:20px;content:" "}
+#main-nav-reveal-tools .grey-background .view-a-brochure a:hover:before,#main-nav-reveal-why .grey-background .view-a-brochure a:hover:before{background-position:-159px -20px}
+#main-nav-reveal-tools h2,#main-nav-reveal-why h2{font-size:21px;font-family:Helvetica,Arial,sans-serif;font-weight:bold;color:#232323;margin:0 30px 9px;padding:0}
+#main-nav-reveal-tools p,#main-nav-reveal-why p{color:#232323;font-size:13px;line-height:18px;margin:0 30px 45px;padding:0;font-family:Helvetica,Arial,sans-serif}
+#main-nav-reveal-tools li,#main-nav-reveal-why li{font-family:Helvetica,Arial,sans-serif}
+#main-nav-reveal-tools .tools-banner{display:inline-block;height:99px;width:644px;background:url("../../../../../../content/dam/subaru/global/header/guide-tour-bg.jpg") no-repeat;margin:0 0 0 35px}
+#main-nav-reveal-tools .tools-banner .content{display:block;width:257px;height:75px;text-align:center;margin:12px 0 0 26px}
+#main-nav-reveal-tools .tools-banner h3{color:#fff;font-size:17px;padding:0 0 2px 0;word-spacing:-1px;margin:0}
+#main-nav-reveal-tools .tools-banner p{color:#fefeff;font-size:11px;line-height:12px;letter-spacing:.7px;word-spacing:.1px;text-align:center;padding:0;margin:0}
+#main-nav-reveal-tools .tools-banner a{width:76px;height:22px;text-decoration:none;background-color:#20609f;border-radius:4px;margin:10px auto}
+#main-nav-reveal-tools .tools-banner span{display:block;color:#fefeff;font-size:12px;text-align:center;padding:5px;margin:0;text-shadow:0 0 5px #000}
+#main-nav-reveal-tools{height:400px;overflow:hidden}
+#main-nav-reveal-tools .small-9{padding:38px 0}
+#main-nav-reveal-tools .grey-background{height:400px}
+#main-nav-reveal-why{padding:0;height:430px;overflow:hidden}
+#main-nav-reveal-why .small-6{max-height:430px}
+#main-nav-reveal-why .grid{padding:0}
+#main-nav-reveal-why .grid .grid-item{margin:20px 0 0 20px}
+.ie8 #main-nav-reveal-why .nav-list{margin:37px -6px 15px 30px}
+#main-nav-reveal-why .grid .grid-item .thumbnail{height:138px;width:220px}
+#main-nav-reveal-why .grid .grid-item .item-info,#main-nav-reveal-why .grid .grid-item .item-link{height:138px;width:220px;padding:0;font-size:12px;position:absolute;z-index:2}
+#main-nav-reveal-why .grid .grid-item .item-info .title,#main-nav-reveal-why .grid .grid-item .item-link .title{color:#FFF;margin:0 10px;padding:0;position:absolute;bottom:28px}
+#main-nav-reveal-why .grid .grid-item .gradient{background:url("../../../../../../content/dam/subaru/global/header/black-gradient.png") 0 bottom repeat-x;position:absolute;height:138px;width:220px;padding:0;z-index:1}
+#main-nav-reveal-why .grid .sub-title{margin:10px 0 -2px 30px;line-height:17px}
+#main-nav-reveal-why .grid .sub-title a{color:#232323}
+#main-nav-reveal-why .grid .last .grid-item{margin:18px 0 0 20px}
+#main-nav-reveal-why .nav-list{margin:37px 0 0}
+#main-nav-reveal-why .nav-list .list-item .sub-title{font-size:13px;line-height:18px;margin:0 40px 33px 30px;padding:0}
+#main-nav-reveal-why .nav-list .list-item.last .sub-title{margin:0 40px 0 30px}
+#main-nav-reveal-why .grey-background{height:430px}
+#main-nav-reveal-why .grid .grid-item .item-info .description{font-size:13px;color:#FFF;margin:0 10px;padding:0;position:absolute;bottom:8px}
+#main-nav-reveal-why .grid .grid-item .item-info .title.no-description{bottom:8px}
+.ie8 #main-nav-reveal-why .nav-list .list-item .sub-title{margin:0 20px 30px 30px}
+.ie8 #main-nav-reveal-why .grid .grid-item{margin:20px 0 0 35px}
+.ie8 #main-nav-reveal-why h2{margin:20px 0 10px 30px}
+.ie8 #main-nav-reveal-why .grid .sub-title{margin:10px 0 -2px 45px}
+.reveal-modal .sticker .cta,.reveal-modal .sticker .button.cta,.reveal-modal .sticker .links .button,#hero-orbit .button,#main-nav-reveal-fad .visit-dealer-site,.shop-tools-list-container .button{transition:background-color 0ms ease-out}
+body.main-nav-sticky #main-nav{position:fixed}
+body.main-nav-sticky #main-nav-reveal,body.main-nav-sticky #main-nav-reveal-fad{top:70px!important;position:fixed}
+body.main-nav-sticky #top-nav{display:none}
+body.search-modal-open #global_header #top-nav{display:block;position:fixed;z-index:99}
+body.search-modal-open #global_header{z-index:98}
+body.search-modal-open #global_header #main-nav{height:100px;position:fixed}
+body.search-modal-open #global_header #main-nav .main-nav-buttons{padding-top:30px}
+body.search-modal-open .reveal-modal-bg{top:30px}
+body.search-modal-open #top-nav-reveal{display:block;position:fixed;top:30px}
+body.search-modal-open .search-drop-down{top:30px;position:fixed;height:68px;background-color:#DDD;width:100%;z-index:2;display:none}
+body.search-modal-open #main-nav-reveal:before,body.search-modal-open #main-nav-reveal-fad:before{background-image:none}
+@media only screen and (max-width:40em){#main-nav-reveal,#top-nav-reveal,#main-nav-reveal-fad{left:30em;min-height:340px}
+}
+@media only screen and (min-width:40.063em) and (min-width:40.063em){#main-nav-reveal,#top-nav-reveal,#main-nav-reveal-fad{left:30em}
+}
+@media only screen and (min-width:60em) and (min-width:60em){#main-nav-reveal,#top-nav-reveal,#main-nav-reveal-fad{left:50%}
+}
+#_bapw-notice{left:0!important;right:0!important;margin:0 auto;top:80px!important;position:fixed!important}
+iframe[name=google_conversion_frame]{position:fixed}
+.top_location_modal_open #global_header{z-index:98}
+.top_location_modal_open #global_header #top-nav{display:block;position:fixed;z-index:99}
+.top_location_modal_open .reveal-modal-bg{z-index:1000;top:30px}
+.top_location_modal_open #top_nav_reveal_location{position:fixed}
+.top_location_modal_open #global_header #main-nav{height:100px;position:fixed}
+.top_location_modal_open #global_header #main-nav .main-nav-buttons{padding-top:30px}
+#top_nav_reveal_location{width:238px;z-index:1001;border:1px #CCC solid;border-top:0;color:#232323;padding:0;top:45px;left:50%;margin-left:-130px}
+#top_nav_reveal_location:before{margin:-14px 0 0 152px;height:15px}
+#top_nav_reveal_location .content{display:inline-block;margin:0;padding:30px;width:236px}
+#top_nav_reveal_location:before{content:" ";padding:0;position:absolute;height:15px;width:30px;display:inline-block;background:url("../../../../../../content/dam/subaru/global/header/navigation-sprite.png") 0 -100px no-repeat}
+#top_nav_reveal_location form,#top_nav_reveal_location input,#top_nav_reveal_location button{margin:0;padding:0;border:0 none;box-shadow:none;-webkit-box-shadow:0 none}
+#top_nav_reveal_location .top_location_zip{border:1px solid #cfcece;width:136px;height:40px;padding:10px 12px;border-right:0 none;display:inline-block;float:left;font-size:13px!important;text-align:left!important}
+#top_nav_reveal_location input:-ms-input-placeholder{color:#afafaf}
+#top_nav_reveal_location .pac-placeholder{-ms-filter:"alpha(opacity=50)"}
+#top_nav_reveal_location .pac-placeholder:focus{-ms-filter:"alpha(opacity=100)"}
+#top_nav_reveal_location .submit_top_location_zip{width:40px;height:40px;padding:0;display:inline-block;float:right;font-size:14px}
+#top_nav_reveal_location .top_location_zip.error{border:1px solid #c00;border-right:0 none}
+#top_nav_reveal_location .top_location_error,#top_nav_reveal_location .top_location_hawaii_message{display:inline-block;margin:8px 0 0}
+#top_nav_reveal_location .top_location_error p,#top_nav_reveal_location .top_location_error .bold,#top_nav_reveal_location .top_location_hawaii_message p,#top_nav_reveal_location .top_location_hawaii_message .bold{color:#c00;font-size:10px;padding:0;margin:0 0 2px}
+#top_nav_reveal_location .errorCont .top{display:block}
+.top_location_modal_open .pac-container{text-align:left;border-top:0;border-right:1px solid #999;border-bottom:1px solid #999;border-left:1px solid #999;color:#232323;width:176px!important;margin:-1px 0 0 0;z-index:1002}
+.top_location_modal_open .pac-container .pac-item:first-child{border-top:0}
+#header-reveal .vsp,#header-reveal .tools,#header-reveal .why{display:none}
+#global_footer .footer-subnav{min-height:242px}
+#global_footer{background-color:#232323;min-width:960px;padding-bottom:62px;position:relative;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;width:100%;z-index:10}
+#global_footer h3{padding:0 0 15px;margin:0 0 17px;width:120px;font-size:16px;font-weight:bold;color:white;border-bottom:2px solid #333;text-shadow:0;white-space:nowrap}
+#global_footer ul{list-style-type:none;padding:0;margin:0 auto}
+#global_footer ul li{margin:0 30px 8px 0}
+#global_footer a,#global_footer a:visited{font-size:13px;text-decoration:none;color:#fff}
+#global_footer a:hover{text-decoration:none;color:#666}
+.global-footer-centering{margin:0 auto;width:960px}
+#global_footer .footer-nav{padding:40px 0 73px 0}
+#global_footer .last-footer-sub-nav{margin-right:0}
+#global_footer .footer-nav-social{border-top:2px solid #333;border-bottom:2px solid #333;padding:0}
+#global_footer .footer-nav-social h3{font-size:18px;border-bottom:0}
+#global_footer .footer-nav-social-container{margin:26px 0 20px 0}
+#global_footer .footer-nav-social .footer-nav-social-connect{width:200px;margin:7px 3px 0 0;padding:0;float:left}
+#global_footer .footer-nav-social .footer-nav-social-connect h3{padding:0;margin:0;font-weight:bold}
+#global_footer .footer-nav-social .footer-nav-social-links{margin-top:0}
+#global_footer .footer-nav-social .footer-nav-social-links .global-image{display:inline-block;margin-right:15px;float:left}
+#global_footer .new.section{clear:left}
+#global_footer .footer-nav-social .footer-nav-social-email{padding:0 0 0 82px;border-top:0;border-right:0;border-bottom:0;border-left:1px;border-right:1px;border-color:#333;border-style:solid;height:40px;margin-top:-5px;width:250px}
+#global_footer .footer-nav-social .footer-nav-social-customer-support{padding:0;height:40px;margin-top:-5px;text-align:center;width:220px}
+#global_footer .footer-nav-social .cta-clickthroughlink{height:30px}
+#global_footer .email-updates{padding:14px 0 0 0;height:30px;margin:0}
+#global_footer .email-updates:before{content:" ";left:56px;padding:0;position:absolute;margin:0;height:14px;width:18px;display:inline-block;z-index:1;background:url(../../../../../../content/dam/subaru/global/header/navigation-sprite.png) -60px -136px no-repeat}
+#global_footer .footer-nav-social-email .email-updates:hover:before{content:" ";left:56px;padding:0;position:absolute;margin:0;height:14px;width:18px;display:inline-block;z-index:12;background:url(../../../../../../content/dam/subaru/global/header/navigation-sprite.png) -80px -136px no-repeat}
+#global_footer .customer-support{padding:14px 0 0 20px;height:30px;margin:0}
+#global_footer .customer-support:before{content:" ";left:50px;padding:0;position:absolute;margin:0;height:14px;width:16px;display:inline-block;background:url(../../../../../../content/dam/subaru/global/header/navigation-sprite.png) -41px -50px no-repeat}
+#global_footer .footer-nav-social-customer-support .customer-support:hover:before{background-position:-101px -125px}
+#global_footer .privacy-policies-container{margin-top:58px}
+#global_footer .privacy-policies{padding-left:0}
+#global_footer .privacy-policies ul{display:inline-block}
+#global_footer .privacy-policies li{float:left;margin:0 11px 0 0;border-right:1px solid #666;padding:0 10px 0 0;display:inline-block}
+#global_footer .privacy-policies .last{border-right:0 none}
+#global_footer #_bapw-icon{margin:0 0 1px 1px}
+#global_footer .footer-nav-language{padding:4px 0 0 0}
+#global_footer .footer-nav-language ul{display:inline-block;float:right}
+#global_footer .footer-nav-language li{float:left;font-size:13px;font-weight:normal;color:#666;margin:0}
+#global_footer .footer-nav-language .english,#global_footer .footer-nav-language .spanish{margin:0 10px 0 0;padding:0 12px 0 0;border-right:1px solid #666}
+#global_footer .en .english a,#global_footer .es .spanish a,#global_footer .zh .chinese a{color:#666;pointer-events:none;cursor:default}
+#global_footer .terms-conditions{color:#666;margin-top:9px}
+#global_footer .terms-conditions a{border-bottom:1px solid #666;color:#666;text-decoration:none}
+#global_footer .terms-conditions a:hover{border-bottom:1px solid #fff;color:#fff;text-decoration:none}
+#global_footer .terms-conditions-add-padding{margin:0;font-size:13px}
+#global_footer .terms-conditions-add-padding .legal{margin-top:-10px}
+#global_footer .terms-conditions-add-padding-span{padding-left:5px}
+#simplemodal-overlay-footer{background-color:#000}
+#simplemodal-container-footer{background-color:#fff;border:0;color:#444;height:auto!important;width:840px!important;padding:20px;font-size:12px;font-family:Helvetica,Arial,sans-serif;color:#55554b}
+#simplemodal-container-footer a{color:#ddd}
+#simplemodal-container-footer a.modalCloseImg{background:url(../../../../../../content/dam/subaru/global/footer/simplemodal-close.png) no-repeat;display:inline;width:50px;height:50px;z-index:3200;position:absolute;top:-22px;right:-25px;cursor:pointer}
+@media only screen and (max-width:64em){div#simplemodal-container-footer.simplemodal-container{position:absolute!important;bottom:100px!important;left:50px!important;top:inherit!important}
+}
+.ie8 #global_footer #_bapw-icon{max-width:50px}

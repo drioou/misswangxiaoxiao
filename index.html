@@ -27,15 +27,15 @@
         .newBrowser {
             display: none
         }
-
+        
         .disabledJS {
             display: block;
         }
-
+        
         .c_browsers.hideBrowsers {
             opacity: 1;
         }
-
+        
         .browser .statistic,
         .browser .download {
             display: block;
@@ -44,12 +44,12 @@
             left: 0;
             width: 100%;
         }
-
+        
         .browser .download a {
             max-width: 210px;
             width: 80%;
         }
-
+        
         .browser:hover .statistic,
         .browser:hover .download {
             opacity: 1;
@@ -114,7 +114,7 @@
                     <div class="inner">
                         <!--  HEADER  -->
                         <header class="title" role="banner">
-                           <!--  <div class="browserVersion newBrowser">
+                            <!--  <div class="browserVersion newBrowser">
                                 <h1>Outdated Browser</h1>
                                 <p>为了更佳的浏览体验，将您的浏览器保持最新。在这里您可以获得最新的版本。</p>
                             </div>
@@ -132,26 +132,34 @@
                         <section class="c_browsers sorted kwicks kwicks-horizontal hideBrowsers">
                             <div id="chrome" class="browser">
                                 <a href="content/spring.html" title="">
-                                <h3 class="statistic"><span>春</span></h3>
-                                <div class="center">
-                                    <!-- <h2><span></span> </h2>
-                                    <div class="download">
-                                        <a href="https://www.google.com/chrome/browser/desktop/" target="_blank" class="browserlink" data-track="Google Chrome">下载</a>
-                                    </div> -->
-                                </div>
+                                    <h3 class="statistic"><span>春</span></h3>
+                                    
+                                        <div class="click_circle" id="click_circle_1" style="transform: matrix(1, 0, 0, 1, 218.56, 0); /* display: none; */">
+                                            <svg class="click_circle_bg" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" style="transform: matrix(0, 0, 0, 0, 0, 0);">
+                                                <circle fill="white" cx="50" cy="50" r="48"></circle>
+                                                <circle class="progress_circle" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#81c5d8" cx="50" cy="50" r="48"></circle>
+                                            </svg>
+                                            <div class="topcircle" style="transform: matrix(0, 0, 0, 0, 0, 0);">
+                                                <div class="cross_container" style="transform: matrix(0, 0, 0, 0, 0, 0);">
+                                                    <div class="line_horizontal"></div>
+                                                    <div class="line_vertical"></div>
+                                                </div>
+                                           
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                             <!-- BROWSER - Firefox -->
                             <div id="firefox" class="browser">
-                            <a href="content/summar.html" title="">
-                                <h3 class="statistic"><span>夏</span></h3>
-                                <div class="center">
-                                    <!-- <h2><span></span> </h2>
+                                <a href="content/summar.html" title="">
+                                    <h3 class="statistic"><span>夏</span></h3>
+                                    <div class="center">
+                                        <!-- <h2><span></span> </h2>
                                     <div class="download">
                                         <a href="http://www.mozilla.org/firefox/new/" target="_blank" class="browserlink" data-track="Mozilla Firefox">下载</a>
                                         <h4>版本 <span>45</span></h4>
                                     </div> -->
-                                </div>
+                                    </div>
                                 </a>
                                 <!-- <div class="available">
                                     <h4>在以下操作系统可用 </h4>
@@ -164,15 +172,16 @@
                             </div>
                             <!-- BROWSER - Internet Explorer -->
                             <div id="internetExplorer" class="browser">
-                            <a href="content/fall.html" title="">
-                                <h3 class="statistic"><span>秋</span> </h3>
-                                <div class="center">
-                                    <!-- <h2><span></span> </h2>
+                                <a href="content/fall.html" title="">
+                                    <h3 class="statistic"><span>秋</span> </h3>
+                                    <div class="center">
+                                        <!-- <h2><span></span> </h2>
                                     <div class="download">
                                         <a href="http://windows.microsoft.com/ie" target="_blank" class="browserlink" data-track="Internet Explorer">下载</a>
                                         <h4>版本 <span>11</span></h4>
                                     </div> -->
-                                </div></a>
+                                    </div>
+                                </a>
                                 <!-- <div class="available">
                                     <h4>在以下操作系统可用 </h4>
                                     <ul class="single">
@@ -182,7 +191,7 @@
                             </div>
                             <!-- BROWSER - Safari -->
                             <div id="safari" class="browser">
-                            <a href="content/winter.html" title=""></a>
+                                <a href="content/winter.html" title=""></a>
                                 <h3 class="statistic"><span>冬</span> </h3>
                                 <div class="center">
                                     <!-- <h2><span></span> </h2>
@@ -251,17 +260,15 @@
     <!-- GOOGLE ANALYTICS -->
 </body>
 <div style="display: none;">
-
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?2b45b6942d2564afabc239dc2cf33d19";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?2b45b6942d2564afabc239dc2cf33d19";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
 </div>
 
 </html>

@@ -2,7 +2,7 @@
 * @Author: duanyong
 * @Date:   2015-06-24 16:52:56
 * @Last Modified by:   duany
-* @Last Modified time: 2016-05-10 11:26:48
+* @Last Modified time: 2016-05-11 14:00:00
 */
 /*
 
@@ -118,7 +118,7 @@ var reload = browserSync.reload;
 
 /* Sass task */
 gulp.task('sass', function () {
-    return gulp.src('public/**/*.scss')
+    return gulp.src('public/css/*.scss')
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer('last 2 version'))
         .pipe(gulp.dest('public/css/'));
